@@ -1,0 +1,127 @@
+/*
+ *GLOBAL
+ */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+:root {
+    --main-black: #1F202B;
+    --main-gray: #8A8CA5;
+    --light-gray: #E7E7E8;
+    --Main-blue: #5952FF;
+}
+html {
+    font-family: Avenir, sans-serif;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--main-black)
+}
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--main-black)
+}
+p {
+    font-size: 17px;
+    color: var(--main-gray)
+}
+a {
+    font-size: 17px;
+    color: var(--main-gray);
+    text-decoration: none;
+}
+.wrapper-content {
+    width: 70%;
+    margin: 0 auto;
+}
+.white {
+    color: white;
+}
+/*
+ * NAV
+ */
+nav {
+    position: fixed;
+    top: 50px;
+    left: 5%;
+    line-height: 50px;
+    width: 100%;
+}
+nav a {
+    font-weight: 500;
+    color: var(--main-black);
+}
+.nav-right {
+    position: fixed;
+    right: 5%;
+    top: 50px;
+}
+.nav-right a > img {
+    vertical-align: text-bottom;
+}
+.nav-right a:first-child {
+    color: var(--Main-blue);
+    margin-right: 60px;
+}
+.rec {
+    background-color: var(--Main-blue);
+    display: inline-block;
+    width: 7px;
+    height: 14px;
+    margin-right: 3px;
+}
+/*
+ * CONTENT
+ */
+ .landing {
+     margin-top: 250px;
+     display: flex;
+ }
+ .left {
+    flex: 1;
+    margin-top: 130px;
+    position: relative;
+ }
+ .right {
+    flex: 1;
+    position: relative;
+ }
+ .right p {
+     max-width: 500px;
+ }
+.left p {
+    max-width: 500px;
+}
+.skills {
+    float: right;
+}
+.skill-box {
+    background-color: white;
+    margin: 30px 0;
+    text-align: center;
+    width: 390px;
+    height: 120px;
+    line-height: 120px;
+    box-shadow: 0px 5px 20px 0px rgba(75,79,124,0.1);
+}
+ /*
+ * BACKGROUND LINES
+ */
+ /*
+ * FOOTER
+ */
+ /*
+ * MOTION
+ */
