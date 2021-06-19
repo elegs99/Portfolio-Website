@@ -22,6 +22,7 @@ html {
 html,body {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 h1 {
     font-size: 50px;
@@ -38,7 +39,7 @@ p {
     color: var(--main-gray)
 }
 a {
-    font-size: 17px;
+    font-size: 20px;
     color: var(--main-gray);
     text-decoration: none;
 }
@@ -72,21 +73,14 @@ nav a {
     vertical-align: text-bottom;
 }
 .nav-right a:first-child {
-    color: var(--Main-blue);
     margin-right: 60px;
 }
-.rec {
-    background-color: var(--Main-blue);
-    display: inline-block;
-    width: 7px;
-    height: 14px;
-    margin-right: 3px;
-}
+
 /*
  * CONTENT
  */
  .landing {
-     margin-top: 250px;
+     margin-top: 150px;
      display: flex;
  }
  .left {
@@ -122,6 +116,14 @@ nav a {
  /*
  * FOOTER
  */
+ footer {
+     position: fixed;
+     bottom: 50px;
+     right: 5%;
+ }
+ footer > p {
+     font-weight: 500;
+ }
  /*
  * MOTION
  */
