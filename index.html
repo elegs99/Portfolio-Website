@@ -15,11 +15,11 @@
         <div class="max-width">
             <div class="logo"><a href="#">Ethan's <span>Portfolio</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services" class="target">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <div class="menu-btn">
@@ -34,7 +34,7 @@
                 <div class="text-1">Welcome to my website, my name is</div>
                 <div class="text-2">Ethan Legum</div>
                 <div class="text-3">and I'm a <span>student</span></div>
-                <a href="#">Go to projects<i class="fas fa-angle-right"></i></a>
+                <a href="#projects">Go to projects<i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
     </section>
@@ -57,7 +57,7 @@
     <!--SERVICES SECTION-->
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">My Services</h2>
+            <h2 class="title">Development Experience</h2>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
@@ -77,7 +77,7 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-database"></i>
                         <div class="text">Database Management</div>
                         <p>Talk about my time as database manager for nutrition intution. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                         
@@ -89,7 +89,7 @@
     <!--SKILLS SECTION-->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My Skills</h2>
+            <h2 class="title">Development Skills</h2>
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creavtive skills & expirences.</div>
@@ -155,15 +155,96 @@
         <div class="max-width">
             <h2 class="title">My Projects</h2>
             <div class="grid-wrapper">
-                <div class="grid-item"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
-                <div class="grid-item"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
-                <div class="grid-item"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
-                <div class="grid-item"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
-                <div class="grid-item"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
-                <div class="grid-item"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
+                <div class="grid-item1"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
+                <div class="grid-item2"><img src="images/srdemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
+                <div class="grid-item3"><img src="images/srdemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
             </div>
         </div>
     </section>
+    <div class="popup">
+        <div class="overlay">
+            <div class="project1">
+                <div class="popup-content">
+                    <div class="header">
+                        <h2>Nutrition Inuition</h2>
+                        <div class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="video">
+                            <iframe width=530px height="300px" src="projectVideos/niDemo.mp4"></iframe>
+                        </div>
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit maiores aperiam odio enim ratione porro minima beatae, fuga, deleniti numquam at asperiores! Neque quasi deserunt delectus illum adipisci modi harum voluptas maxime, animi similique atque qui porro sed pariatur optio esse accusamus, unde asperiores! Quis voluptatem totam, quae tempore cumque consequatur soluta cupiditate alias reprehenderit numquam assumenda, obcaecati harum pariatur illo magnam necessitatibus commodi ex at impedit itaque laborum. Eos perspiciatis quo, aliquid sint, corrupti fugiat sit est architecto qui maiores minima molestiae, ipsam dolorum nesciunt. Incidunt, labore?</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="project-details">
+                            <div class="lang">
+                                <p>Languages Used:</p>
+                            </div>
+                            <div class="tech">
+                                <p>Tech:</p>
+                            </div>
+                            <div class="date">
+                                <p>Completed:</p>
+                            </div>
+                            <div class="langB">
+                                <p>Javascript, HTML, CSS</p>
+                            </div>
+                            <div class="techB">
+                                <p>Heruko, MongoDB</p>
+                            </div>
+                            <div class="dateB">
+                                <p>January 2021</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project2">
+                <div class="popup-content">
+                    <div class="header">
+                        <h2>Smart Rockets</h2>
+                        <div class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="video">
+                            <iframe width=530px height="300px" src="projectVideos/srDemo.mp4"></iframe>
+                        </div>
+                        <div class="desc">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit maiores aperiam odio enim ratione porro minima beatae, fuga, deleniti numquam at asperiores! Neque quasi deserunt delectus illum adipisci modi harum voluptas maxime, animi similique atque qui porro sed pariatur optio esse accusamus, unde asperiores! Quis voluptatem totam, quae tempore cumque consequatur soluta cupiditate alias reprehenderit numquam assumenda, obcaecati harum pariatur illo magnam necessitatibus commodi ex at impedit itaque laborum. Eos perspiciatis quo, aliquid sint, corrupti fugiat sit est architecto qui maiores minima molestiae, ipsam dolorum nesciunt. Incidunt, labore?</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="project-details">
+                            <div class="lang">
+                                <p>Languages Used:</p>
+                            </div>
+                            <div class="tech">
+                                <p>Tech:</p>
+                            </div>
+                            <div class="date">
+                                <p>Completed:</p>
+                            </div>
+                            <div class="langB">
+                                <p>C#</p>
+                            </div>
+                            <div class="techB">
+                                <p>Unity</p>
+                            </div>
+                            <div class="dateB">
+                                <p>2018</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--CONTACT SECTION-->
     <!--FOOTER-->
     <script src="script.js"></script>
