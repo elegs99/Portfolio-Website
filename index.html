@@ -6,21 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan Legum Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://kit.fontawesome.com/414d8b6659.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <a href="#home"><div class="scroll-up-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div></a>
     <!--NAV BAR-->
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Ethan's <span>Portfolio</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services" class="target">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#services" class="menu-btn">Experience</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -33,7 +37,7 @@
             <div class="home-content">
                 <div class="text-1">Welcome to my website, my name is</div>
                 <div class="text-2">Ethan Legum</div>
-                <div class="text-3">and I'm a <span>student</span></div>
+                <div class="text-3">and I'm <span class="typing"></span></div>
                 <a href="#projects">Go to projects<i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
@@ -49,7 +53,7 @@
                 <div class="column right">
                     <div class="text">I'm Ethan and I'm a computer science student</div>
                     <p>Through my four years at ucf I have learned alot and feel im ready to start my career as a programmer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas facilis illum similique non esse perferendis! Consequuntur architecto et vel perferendis eius velit, reprehenderit laudantium recusandae iste accusamus neque eum unde, quod, nemo quam ullam quibusdam. Voluptate doloremque at quibusdam?</p>
-                    <a href="#">Download Resume</a>
+                    <a href="resume/EthanLegum_Resume.pdf" download="EthanLegum_Resume" target="_blank">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -158,9 +162,11 @@
                 <div class="grid-item1"><img src="images/nidemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
                 <div class="grid-item2"><img src="images/srdemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
                 <div class="grid-item3"><img src="images/srdemopic.png" class="grid-img" alt="nutrition intuition picture"></div>
+                <!--add new project here then go down to add new popup info-->
             </div>
         </div>
     </section>
+    <!--PROJECT POP-UPs SECTION-->
     <div class="popup">
         <div class="overlay">
             <div class="project1">
@@ -243,10 +249,70 @@
                     </div>
                 </div>
             </div>
+            <!--add new popup info here and update javascript-->
         </div>
     </div>
     <!--CONTACT SECTION-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam optio corporis laudantium dignissimos excepturi est! Consectetur perspiciatis ut, inventore deserunt eaque eum eos alia</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Ethan Legum</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Orlando, Florida</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">Ethalegum@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea type="text" placeholder="What's your message?" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--FOOTER-->
+    <footer>
+        <span>Created By <a href="#">Ethan Legum</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
