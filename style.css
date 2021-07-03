@@ -161,15 +161,14 @@ html {
 section {
     padding: 100px 0;
 }
-.about, .services, .skills, .projects, .contact {
+.about, .expirence, .skills, .projects, .contact {
     min-height: 100vh;
 }
-.about, .services, .skills, .projects, .contact, footer {
+.about, .expirence, .skills, .projects, .contact, footer {
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
-.services .serv-content, 
-.skills .skills-content, 
+.expirence .serv-content,  
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +238,8 @@ section .title::after {
     color: white;
     font-size: 20px;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    margin-right: 20px;
     margin-top: 20px;
     border-radius: 8px;
     border: 2px solid #2EBAEB;
@@ -250,284 +250,181 @@ section .title::after {
     background: white;
 }
 
-/*SERVICES*/
-.services {
+/*SKILLS & EXPIRENCE*/
+.expirence {
     color: white;
     background: #1F202B;
 }
-.services .title::before {
+.expirence .title::before {
     background: white;
 }
-.services .title::after {
+.expirence .title::after {
     background: #1F202B;
     content: "what i provide";
 }
-.services .serv-content .card {
-    width: calc(33% - 20px);
+.expirence .serv-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.expirence .serv-content .column {
+    width: calc(50% - 30px);
+}
+.expirence .serv-content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.expirence .serv-content .left .card {
+    max-width: 25em;
     background: #242633;
     text-align: center;
     border-radius: 8px;
-    padding: 20px 25px;
+    padding: 15px 20px;
+    margin: 10px 0px;
     transition: all 0.3s ease;
 }
-.services .serv-content .card .box {
+.expirence .serv-content .card {
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box {
-    transform: scale(1.05);
+.expirence .serv-content .card:hover {
+    transform: translateX(10px);
 }
-.services .serv-content .card i{
+.expirence .serv-content .card i{
     font-size: 50px;
     color: #2EBAEB;
 }
-.services .serv-content .card .text {
-    font-size: 25px;
+.expirence .serv-content .card p{
+    font-size: 15px;
+}
+.expirence .serv-content .card .text {
+    font-size: 22px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
-/*SKILLS*/
-.skills .title::after {
-    content: "what i know";
-}
-.skills .skills-content .column {
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text {
-    font-size: 20px;
-    font-weight: 600;
+.expirence .serv-content h3 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p {
-    text-align: justify;
-}
-.skills .skills-content .left a {
-    display: inline-block;
-    background: #2EBAEB;
-    color: white;
-    font-size: 18px;
+.expirence .serv-content .dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 8px;
-    border: 2px solid #2EBAEB;
-    transition: all 0.3s ease;
+    padding-left: 40px;
 }
-.skills .skills-content .left a:hover {
-    color: #2EBAEB;
-    background: none;
+.expirence .serv-content .timeline p {
+    margin-left: 20px;
 }
-.skills .skills-content .right .bars {
+.expirence .serv-content .right .bars {
     margin-bottom: 15px;
 }
-.skills .skills-content .right .info {
+.expirence .serv-content .right .info {
     display: flex;
     margin-bottom: 2px;
-    align-items: center;
-    justify-content: space-between;
 }
-.skills .skills-content .right span {
+.expirence .serv-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background-color: lightgray;
+.expirence .serv-content .right .line {
+    height: 15px;
+    width: 95%;
+    margin-left: 5%;
+    background-color: #2EBAEB;
     position: relative;
 }
-.skills .skills-content .right .line::before {
+.expirence .serv-content .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #2EBAEB;
+    background-color: lightgrey;
 }
-.skills .skills-content .right .java::before {
-    width: 90%;
+.expirence .serv-content .right .java::before {
+    width: 15%;
 }
-.skills .skills-content .right .python::before {
-    width: 90%;
+.expirence .serv-content .right .python::before {
+    width: 30%;
 }
-.skills .skills-content .right .html::before {
-    width: 75%;
+.expirence .serv-content .right .csharp::before {
+    width: 5%;
 }
-.skills .skills-content .right .css::before {
+.expirence .serv-content .right .html::before {
+    width: 53%;
+}
+.expirence .serv-content .right .css::before {
+    width: 53%;
+}
+.expirence .serv-content .right .mysql::before {
     width: 60%;
 }
-.skills .skills-content .right .mysql::before {
-    width: 70%;
-}
-.skills .skills-content .right .js::before {
-    width: 50%;
-}
-.skills .skills-content .right .csharp::before {
-    width: 75%;
+.expirence .serv-content .right .js::before {
+    width: 65%;
 }
 
 /*PROJECTS*/
 .projects {
-    color: white;
-    background: #1F202B;
-}
-.projects .title::before {
-    background: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 .projects .title::after {
-    background: #1F202B;
     content: "Work I've Done";
 }
 .grid-wrapper {
-    background: #1F202B;
+    background: white;
     padding: 50px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, auto));
     grid-auto-rows: minmax(auto, 250px);
     grid-gap: 30px;
 }
-.grid-item1 {
-    border: 1px solid #2EBAEB;
-    transition: ease-in-out 0.3s all;
-}
-.grid-item2 {
-    border: 1px solid #2EBAEB;
-    transition: ease-in-out 0.3s all;
-}
-.grid-item3 {
-    border: 1px solid #2EBAEB;
-    transition: ease-in-out 0.3s all;
-}
 .grid-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.grid-item1 {
+    border: 1px solid #1F202B;
+    transition: ease-in-out 0.3s all;
+}
+.grid-item2 {
+    border: 1px solid #1F202B;
+    transition: ease-in-out 0.3s all;
+}
+/*
+.grid-item2 {
+    border: 1px solid #1F202B;
+    transition: ease-in-out 0.3s all;
+}
+*/
 .grid-item1:hover {
-    border: 1px solid #2EBAEB;
+    border: 2px solid #2EBAEB;
     background: gray;
     transform: scale(1.1);
     transition: ease-in-out 0.3s all;
     cursor: pointer;
 }
 .grid-item2:hover {
-    border: 1px solid #2EBAEB;
-    background: gray;
-    transform: scale(1.1);
-    transition: ease-in-out 0.3s all;
-    cursor: pointer;
-}
-.grid-item3:hover {
-    border: 1px solid #2EBAEB;
-    background: gray;
-    transform: scale(1.1);
-    transition: ease-in-out 0.3s all;
-    cursor: pointer;
-}
-
-/*CONTACT*/
-.contact .title::after {
-    content: "get in touch";
-}
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons {
-    margin: 10px 0;
-}
-.contact .contact-content .row {
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info {
-    margin-left: 30px;
-}
-.contact .contact-content .row i {
-    font-size: 25px;
-    color: #2EBAEB;
-}
-.contact .contact-content .info .head {
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title {
-    color: #333;
-}
-.contact .right form .fields {
-display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea {
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name {
-    margin-right: 10px;
-}
-.contact .right form .email {
-    margin-left: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 8px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-}
-.contact .right form .textarea textarea {
-    padding-top: 10px;
-    resize: none;
-}
-.contact .right form .button {
-    height: 47px;
-    width: 170px;
-}
-.contact .right form .button button {
-    width: 100%;
-    height: 100%;
     border: 2px solid #2EBAEB;
-    background: #2EBAEB;
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 8px;
+    background: gray;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s all;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
-.contact .right form .button button:hover {
-    color: #2EBAEB;
-    background: none;
+/*
+.grid-item3:hover {
+    border: 2px solid #2EBAEB;
+    background: gray;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s all;
+    cursor: pointer;
 }
-
-/*FOOTER*/
-footer {
-    background: #1F202B;
-    padding: 20px 23px;
-    color: white;
-}
-footer span a {
-    color: #2EBAEB;
-    text-decoration: none;
-}
-footer span a:hover {
-    text-decoration: underline;
+*/
+.grid-itemcomingsoon {
+    border: 1px solid #1F202B;
+    transition: ease-in-out 0.3s all;
 }
 
 /*POP-UP*/
@@ -581,20 +478,103 @@ footer span a:hover {
 }
 .content .desc {
     margin-top: 12px;
-    margin-right: 5px;
+    margin-right: 10px;
     color: white;
     width: 50%;
     font-size: 16px;
 }
-.video {
+.external-links {
     display: flex;
-    margin: 5px 20px;
-    padding: 10px 0 0;
-    justify-content: space-between;
+    font-weight: 700px;
+    font-size: 25px;
 }
+.external-links a {
+    margin-right: 10px;
+    padding: 15px 5px;
+}
+.external-links i {
+    color: white;
+}
+.external-links i:hover {
+    color: #2EBAEB;
+    transition: all 0.3s ease;
+}
+
+/* Project Slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container img {
+    width: 50em;
+    height: 25em;
+    padding: 20px;
+}
+
+/* Hide the images by default */
+.slideshow-container .mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.slideshow-container .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin: 0px 20px;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow-container .caption {
+    color: white;
+    background: rgba(0,0,0,0.5);
+    font-weight: 400;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    margin: 20px 20px;
+    bottom: .2em;
+    width: 95%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.slideshow-container .numbertext {
+    color: white;
+    background: rgba(0,0,0,0.5);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 20px 20px;
+    position: absolute;
+    top: 0;
+}
+
 .project-details {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: minmax(auto, 400px) minmax(auto, 400px);
     grid-template-rows: auto auto;
     grid-gap: 10px;
     color: white;
@@ -603,41 +583,36 @@ footer span a:hover {
     justify-self: center;
     font-weight: 500px;
 }
-.lang {
+.project-details .lang {
     font-weight: 700px;
     font-size: 22px;
 }
-.tech {
-    font-weight: 700px;
-    font-size: 22px;
-}
-.date {
+.project-details .date {
     font-weight: 700px;
     font-size: 22px;
 }
 
+/*FOOTER*/
+footer {
+    background: black;
+    padding: 15px 23px;
+    color: white;
+}
+footer span a {
+    color: #2EBAEB;
+    text-decoration: none;
+}
+footer span a:hover {
+    text-decoration: underline;
+}
 
 /*MEDIA QUERY*/
-@media (max-width: 1475px) {
+@media (max-width: 115.625rem) {
     .popup-content {
         margin: 10% 10%;
     }
 }
-@media (max-width: 1100px) {
-    .home .max-width {
-        margin-left: 0px;
-    }
-}
-@media (max-width: 1100px) {
-    .about .about-content .left img {
-        height: 350px;
-        width: 350px;
-    }
-}
-@media (max-width: 1000px) {
-    .max-width {
-        padding: 0 50px;
-    }
+@media (max-width: 87.5rem) {
     .content {
         flex-direction: column;
         align-items: center;
@@ -647,12 +622,47 @@ footer span a:hover {
         text-align: center;
     }
 }
-@media (max-width: 950px) {
+@media (max-width: 75rem) {
+    .expirence .serv-content .card:hover {
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 68.75rem) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 68.75rem) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 62.5rem) {
+    .slideshow-container img {
+        width: 35em;
+        height: 20em;
+    }
+    .slideshow-container .caption {
+        width: 93%;
+    }
+    .max-width {
+        padding: 0 50px;
+    }
+    .expirence .serv-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .expirence .serv-content .column {
+        width: 90%;
+    }
+}
+@media (max-width: 59.375rem) {
     .popup-content {
         margin: 10% 5%;
     }
 }
-@media (max-width: 930px) {
+@media (max-width: 58.125rem) {
     .menu-btn {
         display: block;
         z-index: 5;
@@ -718,7 +728,7 @@ footer span a:hover {
         margin-bottom: 35px;
     }
 }
-@media (max-width: 690px) {
+@media (max-width: 43.125rem) {
     .max-width {
         padding: 0 23px;
     }
@@ -742,19 +752,20 @@ footer span a:hover {
         font-size: 18px;
     }
 }
-@media (max-width: 630px) {
-    .video iframe{
-        width: auto;
-        height: auto;
+@media (max-width: 39.375rem) {
+    .slideshow-container img {
+        width: 21em;
+        height: 12em;
+    }
+    .slideshow-container .caption {
+        margin-bottom: -2em;
+        width: 89%;
     }
     .content .desc {
+        margin-top: 3em;
         font-size: 14px;
     }
     .lang {
-        font-weight: 700px;
-        font-size: 18px;
-    }
-    .tech {
         font-weight: 700px;
         font-size: 18px;
     }
@@ -765,14 +776,11 @@ footer span a:hover {
     .langB {
         font-size: 14px;
     }
-    .techB {
-        font-size: 14px;
-    }
     .dateB {
         font-size: 14px;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
     .home .home-content .text-2{
         font-size: 50px;
     }
