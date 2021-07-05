@@ -1,7 +1,7 @@
 # ethanlegum_website
 Personal website and portfolio. Started June 2021<br>
 Hosting: Bluehost<br>
-  renewal date: June 2, 2022
+ * renewal date: June 2, 2022
 
 Helpful Links:<br>
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container<br>
