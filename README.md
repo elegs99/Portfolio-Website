@@ -1,6 +1,6 @@
 # ethanlegum_website
 Personal website and portfolio. Started June 2021<br>
-Hosting: Bluehost
+Hosting: Bluehost<br>
   renewal date: June 2, 2022
 
 Helpful Links:<br>
