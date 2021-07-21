@@ -7,7 +7,7 @@
 }
 html {
     scroll-behavior:smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 70px;
 }
 .max-width {
     max-width: 1600px;
@@ -21,11 +21,16 @@ html {
     z-index: 4;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    height: 95px;
+    top: 0px;
     transition: all 0.3s ease;
 }
 .navbar.sticky {
     padding: 30px 0;
     background: #2EBAEB;
+    top: -15px;
+    height: 85px;
+    transition: all 0.3s ease;
 }
 .navbar .max-width {
     display: flex;
@@ -51,7 +56,7 @@ html {
 .navbar .menu li a {
     display: block;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
@@ -90,7 +95,7 @@ html {
     color: white;
 }
 .scroll-up-btn.show {
-    bottom: 30px;
+    bottom: 70px;
     opacity: 1;
     pointer-events: auto;
 }
@@ -159,16 +164,16 @@ html {
 
 /*Styling Multiclass*/
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
-.about, .expirence, .skills, .projects, .contact {
+.about, .experience, .skills, .projects {
     min-height: 100vh;
 }
-.about, .expirence, .skills, .projects, .contact, footer {
+.about, .experience, .skills, .projects, .popup, footer {
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content, 
-.expirence .serv-content,  
+.experience .serv-content,  
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -189,7 +194,7 @@ section .title::before {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 200px;
     height: 3px;
     background-color: #111;
     transform: translateX(-50%);
@@ -198,7 +203,7 @@ section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
-    font-size: 20px;
+    font-size: 21px;
     color: #2EBAEB;
     padding: 5px;
     background-color: white;
@@ -206,8 +211,11 @@ section .title::after {
 }
 
 /*ABOUT*/
+.about .title::before {
+    width: 130px;
+}
 .about .title::after {
-    content: "who i am";
+    content: "Who I Am";
 }
 .about .about-content .left {
     width: 45%;
@@ -251,91 +259,91 @@ section .title::after {
 }
 
 /*SKILLS & EXPIRENCE*/
-.expirence {
+.experience {
     color: white;
     background: #1F202B;
 }
-.expirence .title::before {
+.experience .title::before {
     background: white;
 }
-.expirence .title::after {
+.experience .title::after {
     background: #1F202B;
-    content: "what i provide";
+    content: "What I Provide";
 }
-.expirence .serv-content {
+.experience .serv-content {
     display: flex;
     flex-direction: row;
     align-items: stretch;
 }
-.expirence .serv-content .column {
+.experience .serv-content .column {
     width: calc(50% - 30px);
 }
-.expirence .serv-content .left {
+.experience .serv-content .left {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
 }
-.expirence .serv-content .left .card {
-    max-width: 25em;
+.experience .serv-content .left .card {
+    max-width: 26em;
     background: #242633;
-    text-align: center;
+    text-align: left;
     border-radius: 8px;
     padding: 15px 20px;
     margin: 10px 0px;
     transition: all 0.3s ease;
 }
-.expirence .serv-content .card {
+.experience .serv-content .card {
     transition: all 0.3s ease;
 }
-.expirence .serv-content .card:hover {
-    transform: translateX(10px);
+.experience .serv-content .card:hover {
+    transform: translateX(5px);
 }
-.expirence .serv-content .card i{
+.experience .serv-content .card i{
     font-size: 50px;
     color: #2EBAEB;
 }
-.expirence .serv-content .card p{
+.experience .serv-content .card p{
     font-size: 15px;
 }
-.expirence .serv-content .card .text {
+.experience .serv-content .card .text {
     font-size: 22px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+    font-weight: 600;
+    margin: 10px 0px;
 }
-.expirence .serv-content h3 {
+.experience .serv-content h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
-.expirence .serv-content .dates {
+.experience .serv-content .dates {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-weight: 500;
     padding-left: 40px;
 }
-.expirence .serv-content .timeline p {
+.experience .serv-content .timeline p {
     margin-left: 20px;
 }
-.expirence .serv-content .right .bars {
+.experience .serv-content .right .bars {
     margin-bottom: 15px;
 }
-.expirence .serv-content .right .info {
+.experience .serv-content .right .info {
     display: flex;
     margin-bottom: 2px;
 }
-.expirence .serv-content .right span {
+.experience .serv-content .right span {
     font-weight: 500;
     font-size: 18px;
 }
-.expirence .serv-content .right .line {
+.experience .serv-content .right .line {
     height: 15px;
     width: 95%;
     margin-left: 5%;
     background-color: #2EBAEB;
     position: relative;
 }
-.expirence .serv-content .right .line::before {
+.experience .serv-content .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -343,25 +351,25 @@ section .title::after {
     top: 0;
     background-color: lightgrey;
 }
-.expirence .serv-content .right .java::before {
+.experience .serv-content .right .java::before {
     width: 15%;
 }
-.expirence .serv-content .right .python::before {
+.experience .serv-content .right .python::before {
     width: 30%;
 }
-.expirence .serv-content .right .csharp::before {
+.experience .serv-content .right .csharp::before {
     width: 5%;
 }
-.expirence .serv-content .right .html::before {
+.experience .serv-content .right .html::before {
     width: 53%;
 }
-.expirence .serv-content .right .css::before {
+.experience .serv-content .right .css::before {
     width: 53%;
 }
-.expirence .serv-content .right .mysql::before {
+.experience .serv-content .right .mysql::before {
     width: 60%;
 }
-.expirence .serv-content .right .js::before {
+.experience .serv-content .right .js::before {
     width: 65%;
 }
 
@@ -374,9 +382,8 @@ section .title::after {
 }
 .grid-wrapper {
     background: white;
-    padding: 50px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-auto-rows: minmax(auto, 250px);
     grid-gap: 30px;
 }
@@ -394,7 +401,7 @@ section .title::after {
     transition: ease-in-out 0.3s all;
 }
 /*
-.grid-item2 {
+.grid-item3 {
     border: 1px solid #1F202B;
     transition: ease-in-out 0.3s all;
 }
@@ -446,14 +453,16 @@ section .title::after {
     display: none;
 }
 .popup-content {
-    font-family: 'Ubuntu', sans-serif;
     z-index: 11;
     background: #1F202B;
     position: relative;
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     border-radius: 20px;
-    margin: 10% 20%;
+    margin-top: calc(45vh + -280px);
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 5px 2px;
 }
 .header {
     display: flex;
@@ -485,8 +494,7 @@ section .title::after {
 }
 .external-links {
     display: flex;
-    font-weight: 700px;
-    font-size: 25px;
+    font-size: 30px;
 }
 .external-links a {
     margin-right: 10px;
@@ -499,7 +507,6 @@ section .title::after {
     color: #2EBAEB;
     transition: all 0.3s ease;
 }
-
 /* Project Slideshow */
 .slideshow-container {
     max-width: 1000px;
@@ -508,20 +515,19 @@ section .title::after {
 }
 .slideshow-container img {
     width: 50em;
-    height: 25em;
+    height: 28.125em;
     padding: 20px;
+    
 }
-
 /* Hide the images by default */
 .slideshow-container .mySlides {
     display: none;
 }
-
 /* Next & previous buttons */
 .slideshow-container .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: auto;
     margin-top: -22px;
     margin: 0px 20px;
@@ -534,7 +540,6 @@ section .title::after {
     border-radius: 0 3px 3px 0;
     user-select: none;
 }
-
 /* Position the "next button" to the right */
 .slideshow-container .next {
     right: 0;
@@ -545,7 +550,6 @@ section .title::after {
 .slideshow-container .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
-
 /* Caption text */
 .slideshow-container .caption {
     color: white;
@@ -559,11 +563,11 @@ section .title::after {
     width: 95%;
     text-align: center;
 }
-
 /* Number text (1/3 etc) */
 .slideshow-container .numbertext {
     color: white;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.3);
+    transition: 0.6s ease;
     font-weight: 400;
     font-size: 14px;
     padding: 8px 12px;
@@ -571,7 +575,6 @@ section .title::after {
     position: absolute;
     top: 0;
 }
-
 .project-details {
     display: grid;
     grid-template-columns: minmax(auto, 400px) minmax(auto, 400px);
@@ -595,8 +598,10 @@ section .title::after {
 /*FOOTER*/
 footer {
     background: black;
-    padding: 15px 23px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em;
 }
 footer span a {
     color: #2EBAEB;
@@ -605,40 +610,51 @@ footer span a {
 footer span a:hover {
     text-decoration: underline;
 }
+footer .social-links {
+    margin-bottom: 10px;
+}
+footer .social-links i {
+    font-size: 28px;
+    color: white;
+    margin-right: 30px;
+}
+footer .social-links i:hover {
+    transform: scale(1.15);
+    color: #2EBAEB;
+    transition: all 0.1s ease;
+}
 
 /*MEDIA QUERY*/
 @media (max-width: 115.625rem) {
     .popup-content {
-        margin: 10% 10%;
+        margin-right: 10%;
+        margin-left: 10%;
     }
 }
-@media (max-width: 87.5rem) {
-    .content {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 100rem) {
+    .content .desc {
+        font-size: 15px;
+    }
+}
+@media (max-width: 93.75rem) {
+    .popup-content {
+        margin-right: 6%;
+        margin-left: 6%;
     }
     .content .desc {
-        width: 90%;
-        text-align: center;
+        font-size: 14px;
     }
 }
-@media (max-width: 75rem) {
-    .expirence .serv-content .card:hover {
-        transform: translateX(0px);
+@media (max-width: 86rem) {
+    .popup-content {
+        margin-right: 4%;
+        margin-left: 4%;
     }
 }
-@media (max-width: 68.75rem) {
-    .home .max-width {
-        margin-left: 0px;
+@media (max-width: 78.125rem) {
+    .popup-content {
+        margin-top: calc(50vh + -270px);
     }
-}
-@media (max-width: 68.75rem) {
-    .about .about-content .left img {
-        height: 350px;
-        width: 350px;
-    }
-}
-@media (max-width: 62.5rem) {
     .slideshow-container img {
         width: 35em;
         height: 20em;
@@ -646,23 +662,68 @@ footer span a:hover {
     .slideshow-container .caption {
         width: 93%;
     }
+}
+@media (max-width: 75rem) {
+    .experience .serv-content .card:hover {
+        transform: translateX(0px);
+    }
+}
+@media (max-width: 68.75rem) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+    .popup-content {
+        margin-top: calc(45vh + -275px);
+    }
+}
+@media (max-width: 62.5rem) {
     .max-width {
         padding: 0 50px;
     }
-    .expirence .serv-content {
+    .experience .serv-content {
         flex-direction: column;
         align-items: center;
     }
-    .expirence .serv-content .column {
+    .experience .serv-content .column {
         width: 90%;
     }
-}
-@media (max-width: 59.375rem) {
+    .experience .serv-content .left .card {
+        text-align: center;
+    }
     .popup-content {
-        margin: 10% 5%;
+        margin-top: calc(40vh + -260px);
+    }
+    .slideshow-container img {
+        width: 35em;
+        height: 18em;
+    }
+    .slideshow-container .caption {
+        width: 93%;
+    }
+    
+    .content .desc {
+        font-size: 13px;
+    }
+    .lang {
+        font-weight: 700px;
+        font-size: 14px;
+    }
+    .date {
+        font-weight: 700px;
+        font-size: 14px;
+    }
+    .langB {
+        font-size: 12px;
+    }
+    .dateB {
+        font-size: 12px;
     }
 }
-@media (max-width: 58.125rem) {
+@media (max-width: 56.25rem) {
     .menu-btn {
         display: block;
         z-index: 5;
@@ -727,10 +788,42 @@ footer span a:hover {
         width: 100%;
         margin-bottom: 35px;
     }
+    .grid-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        grid-auto-rows: minmax(auto, 200px);
+    }
+    .popup-content {
+        margin-top: calc(35vh + -215px);
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content .desc {
+        width: 96%;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .popup-content .project-details {
+        margin-top: -15px;
+    }
+    .slideshow-container img {
+        width: 30em;
+        height: 15em;
+    }
+    .slideshow-container .caption {
+        width: 91.7%;
+    }
+}
+@media (max-width: 46.875rem) {
+    .popup-content {
+        margin-top: calc(33vh + -215px);
+    }
 }
 @media (max-width: 43.125rem) {
     .max-width {
-        padding: 0 23px;
+        padding: 0 30px;
     }
     .home .home-content .text-2{
         font-size: 60px;
@@ -751,36 +844,50 @@ footer span a:hover {
     .navbar .menu li a{
         font-size: 18px;
     }
+    footer {
+        padding: 1em 1em;
+    }
+    footer .social-links i {
+        margin-right: 5px;
+    }
 }
 @media (max-width: 39.375rem) {
+    .popup-content {
+        margin-top: calc(33vh + -215px);
+        margin: 5px 3%;
+    }
     .slideshow-container img {
         width: 21em;
         height: 12em;
     }
     .slideshow-container .caption {
-        margin-bottom: -2em;
+        bottom: -3em;
         width: 89%;
+        font-size: 12px;
     }
     .content .desc {
         margin-top: 3em;
-        font-size: 14px;
+        font-size: 12px;
     }
     .lang {
         font-weight: 700px;
-        font-size: 18px;
+        font-size: 12px;
     }
     .date {
         font-weight: 700px;
-        font-size: 18px;
+        font-size: 12px;
     }
     .langB {
-        font-size: 14px;
+        font-size: 10px;
     }
     .dateB {
-        font-size: 14px;
+        font-size: 10px;
     }
 }
 @media (max-width: 31.25rem) {
+    .scroll-up-btn.show {
+        bottom: 100px;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }

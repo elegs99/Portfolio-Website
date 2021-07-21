@@ -49,6 +49,7 @@ $(document).ready(function(){
         $('body').css('overflow','hidden')
     });
         // add new popup here
+    // close popup
     $('.close-btn').click(function(){
         $('.overlay').hide();
         $('.project1').hide();
@@ -57,13 +58,28 @@ $(document).ready(function(){
         $('.scroll-up-btn').addClass("show");
         $('body').css('overflow','auto')
     });
+    $('.overlay').click(function(event){
+        var $target = $(event.target);
+        if(!$target.closest('.popup-content').length){
+            $('.overlay').hide();
+            $('.project1').hide();
+            $('.project2').hide();
+            $('.popup-content').hide();
+            $('.scroll-up-btn').addClass("show");
+            $('body').css('overflow','auto')
+        }
+    });
+
 });
 
-// Code for slideshow
+// Code for slideshow modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
+// increment second index by 1
 var slideIndex = [1,1];
 
-/* Class the members of each slideshow group with different CSS classes */
+// Add mySlides3
 var slideId = ["mySlides1", "mySlides2"]
+
+// add showSlides(1, 2)
 showSlides(1, 0);
 showSlides(1, 1);
 
