@@ -4,6 +4,8 @@ Hosting: Bluehost<br>
  * renewal date: June 2, 2022
 
 Helpful Links:<br>
+ * https://ezgif.com/
+ * https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
  * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
  * https://www.youtube.com/watch?v=tcskp-ncN0I
  * https://css-tricks.com/snippets/css/complete-guide-grid/
