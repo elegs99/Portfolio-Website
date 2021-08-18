@@ -185,7 +185,7 @@ section .title {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -215,7 +215,7 @@ section .title::after {
     width: 130px;
 }
 .about .title::after {
-    content: "Who I Am";
+    content: "who I am";
 }
 .about .about-content .left {
     width: 45%;
@@ -268,7 +268,7 @@ section .title::after {
 }
 .experience .title::after {
     background: #1F202B;
-    content: "What I Provide";
+    content: "what I provide";
 }
 .experience .serv-content {
     display: flex;
@@ -378,7 +378,7 @@ section .title::after {
     font-family: 'Ubuntu', sans-serif;
 }
 .projects .title::after {
-    content: "Work I've Done";
+    content: "work I've done";
 }
 .grid-wrapper {
     background: white;
@@ -783,8 +783,7 @@ footer .social-links i:hover {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
-    .contact .contact-content .column {
+    .skills .skills-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
@@ -865,6 +864,9 @@ footer .social-links i:hover {
         width: 89%;
         font-size: 12px;
     }
+    .slideshow-container .numbertext {
+        font-size: 10px;
+    }
     .content .desc {
         margin-top: 3em;
         font-size: 12px;
@@ -896,5 +898,10 @@ footer .social-links i:hover {
     }
     .navbar .menu li a{
         font-size: 15px;
+    }
+}
+@media (max-width: 25rem) {
+    .popup .header h2 {
+        font-size: 1.4em;
     }
 }
