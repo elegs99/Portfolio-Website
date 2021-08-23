@@ -895,6 +895,9 @@ footer .social-links i:hover {
     .home .home-content .text-3{
         font-size: 27px;
     }
+    .navbar .logo a {
+        font-size: 33px;
+    }
     .navbar .menu li a{
         font-size: 15px;
     }
