@@ -296,9 +296,6 @@ section .title::after {
 .experience .serv-content .card {
     transition: all 0.3s ease;
 }
-.experience .serv-content .card:hover {
-    transform: translateX(5px);
-}
 .experience .serv-content .card i{
     font-size: 50px;
     color: #2EBAEB;
@@ -352,25 +349,28 @@ section .title::after {
     background-color: lightgrey;
 }
 .experience .serv-content .right .java::before {
-    width: 15%;
+    /*late 2018*/
+    width: 10%;
 }
 .experience .serv-content .right .python::before {
-    width: 30%;
+    /*early 2019*/
+    width: 25%;
 }
 .experience .serv-content .right .csharp::before {
+    /*mid 2018*/
     width: 5%;
 }
-.experience .serv-content .right .html::before {
-    width: 53%;
-}
-.experience .serv-content .right .css::before {
-    width: 53%;
+.experience .serv-content .right .html::before, .css::before {
+    /*late 2019 early 2020*/
+    width: 45%;
 }
 .experience .serv-content .right .mysql::before {
-    width: 60%;
+    /*early 2020*/
+    width: 55%;
 }
 .experience .serv-content .right .js::before {
-    width: 65%;
+    /*mid 2020*/
+    width: 60%;
 }
 
 /*PROJECTS*/
