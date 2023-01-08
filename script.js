@@ -4,6 +4,7 @@ $(document).ready(function(){
     $('.popup-content').hide();
     $('.project1').hide();
     $('.project2').hide();
+    $('.project3').hide();
     // add header background when scrolling
     // add scroll up botton when scrolling
     $(window).scroll(function(){
@@ -27,7 +28,7 @@ $(document).ready(function(){
 
     // Typing animation
     var typed = new Typed(".typing", {
-        strings: ["a Student", "a Programmer", " your Next Hire"],
+        strings: ["a Student.", "a Programmer.", " your Next Hire.",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -48,12 +49,22 @@ $(document).ready(function(){
         $('.scroll-up-btn').removeClass("show");
         $('body').css('overflow','hidden')
     });
-        // add new popup here
+    $('.grid-item3').click(function(){
+        $('.overlay').show()
+        $('.project3').show()
+        $('.popup-content').show()
+        $('.scroll-up-btn').removeClass("show");
+        $('body').css('overflow','hidden')
+    });
+    // add new popup here
+
     // close popup
     $('.close-btn').click(function(){
         $('.overlay').hide();
         $('.project1').hide();
         $('.project2').hide();
+        $('.project3').hide();
+        // add new project hide
         $('.popup-content').hide();
         $('.scroll-up-btn').addClass("show");
         $('body').css('overflow','auto')
@@ -64,6 +75,8 @@ $(document).ready(function(){
             $('.overlay').hide();
             $('.project1').hide();
             $('.project2').hide();
+            $('.project3').hide();
+            // add new project hide
             $('.popup-content').hide();
             $('.scroll-up-btn').addClass("show");
             $('body').css('overflow','auto')
@@ -74,14 +87,16 @@ $(document).ready(function(){
 
 // Code for slideshow modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
 // increment second index by 1
-var slideIndex = [1,1];
+var slideIndex = [1,2];
 
-// Add mySlides3
-var slideId = ["mySlides1", "mySlides2"]
+// Add mySlides4
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 
-// add showSlides(1, 2)
-showSlides(1, 0);
-showSlides(1, 1);
+// 7 > highest num of slides, 3 num of slideshows
+// add showSlides(7, 3)
+showSlides(7, 2);
+showSlides(7, 1);
+showSlides(7, 0);
 
 // Next/previous controls
 function plusSlides(n, no) {

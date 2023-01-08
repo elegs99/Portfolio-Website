@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ethan Legum portfolio website. Built from scratch using html, css, and javascript. Use this site to find out more about me and my programming accomplishments.">
+    <meta name="description" content="Ethan Legum portfolio website. Built from scratch using html, css, and javascript. Data Analysis:
+    Architecting deep neural networks using Keras and Pytorch packages. Training models to classify datasets such as MNIST, CIFAR-10, and TinyVirat. Cleaning large datasets with Pandas and NumPy.
+    Front-end Web Development:
+    Designing UI/UX using Figma, Framer, and AdobeXD. Coding front-end in HTML, CSS, and Javascript including this website.
+    Database Management:
+    Creating and managing databases using MySQL and NoSQL/MongoDB for LAMP and MERN stack respectively.">
     <title>Ethan Legum Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/icon.png">
@@ -23,7 +28,7 @@
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
-                <li><a href="#experience" class="menu-btn">Experience</a></li>
+                <li><a href="#experience" class="menu-btn">Skills</a></li>
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
             </ul>
             <div class="menu-btn">
@@ -38,7 +43,8 @@
                 <div class="text-1">Welcome to my website, my name is</div>
                 <div class="text-2">Ethan Legum</div>
                 <div class="text-3">and I'm <span class="typing"></span></div>
-                <a href="#projects">Go to projects<i class="fas fa-angle-double-right"></i></a>
+                <a href="resume/EthanLegum_Resume.pdf" download="EthanLegum_Resume" target="_blank">Resume<i class="fas fa-external-link-alt"></i></a>
+                <a href="#projects">Portfolio<i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
     </section>
@@ -51,11 +57,12 @@
                     <img src="images/profile-picture.jpg" alt="profile picture">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Ethan and I'm a computer science student</div>
-                    <p>but if you get to know me you'll quickly see I am much more than that. 
-                        At heart, I am a creative problem-solver and the most challenging puzzles I have found so far have existed digitally and can only be solved using programming.
-                        <br><br> As I near the end of my bachelor’s degree I am looking for a job where I can use the skills I have developed in machine learning and web development to help your company. 
-                        I am hoping to secure a job where I can not only contribute to the community and overall goal of the company but also find the next step in my problem solving journey.</p>
+                    <div class="text">I'm Ethan and I'm a computer science student.</div>
+                    <p>Once you get to know me you'll quickly see I am much more than that. At heart, I am a creative problem-solver who has found the most challenging puzzles exist 
+                        digitally and can only be solved using programming.
+                        <br><br>As I continue my education with a Master’s in Computer Vision, I am looking for a job where I can use the skills I have developed in machine learning 
+                        and web development to help your company. I am hoping to secure a job where I can contribute to the overall goal of the company and find the next step in my 
+                        problem-solving journey.</p>
                     <a href="mailto:ethanlegum@gmail.com">Email Me</a>
                     <a href="resume/EthanLegum_Resume.pdf" download="EthanLegum_Resume" target="_blank">Download Resume</a>
                 </div>
@@ -73,7 +80,7 @@
                             <i class="fas fa-chart-line"></i>
                             <div class="text">Data Analysis</div>
                             <p>Architecting deep neural networks using Keras and Pytorch packages.<br><br>
-                                Training models to classify datasets such as MNIST, CIFAR-10, and TinyVirat.<br><br>
+                                Training models to classify datasets such as ULB Credit Card Fraud, CIFAR-10, and TinyVirat.<br><br>
                                 Cleaning large datasets with Pandas and NumPy.</p>
                         </div>
                     </div>
@@ -97,7 +104,7 @@
                     <div class="timeline">
                         <h3>Timeline</h3>
                         <div class="dates">
-                            <p>2018</p><p>2019</p><p>2020</p><p>2021</p><p>2022</p>
+                            <p>2023</p><p>2022</p><p>2021</p><p>2020</p><p>2019</p>
                         </div>
                         <div class="bars">
                             <div class="info">
@@ -149,10 +156,11 @@
     <!--PROJECTS SECTION-->
     <section class="projects" id="projects">
         <div class="max-width">
-            <h2 class="title">My Projects</h2>
+            <h2 class="title">Portfolio</h2>
             <div class="grid-wrapper">
-                <div class="grid-item1"><img src="images/niDemoPic.png" class="grid-img" alt="nutrition intuition demo picture"></div>
-                <div class="grid-item2"><img src="images/erDemoPic.png" class="grid-img" alt="evolutionary rockets demo picture"></div>                <!--add new project here then go down to add new popup info-->
+                <div class="grid-item3"><img src="images/em/emDemoPic.png" class="grid-img" alt="easymeshVR demo picture"></div>
+                <div class="grid-item1"><img src="images/ni/niDemoPic.png" class="grid-img" alt="nutrition intuition demo picture"></div>
+                <div class="grid-item2"><img src="images/er/erDemoPic.png" class="grid-img" alt="evolutionary rockets demo picture"></div>   <!--add new project here then go down to add new popup info-->
                 <div class="grid-itemcomingsoon"><img src="images/projectComingSoon.jpg" class="grid-img" alt="coming soon picture"></div>
             </div>
         </div>
@@ -160,11 +168,12 @@
     <!--PROJECT POP-UPs SECTION-->
     <div class="popup">
         <div class="overlay">
-            <!--for new project copy project1 div-->
-            <div class="project1">
+            <!--for new project copy project3 div -->
+            <!--add new popup info here and update javascript-->
+            <div class="project3">
                 <div class="popup-content">
                     <div class="header">
-                        <h2>Nutrition Inuition</h2>
+                        <h2>EasyMeshVR</h2>
                         <div class="close-btn">
                             <i class="fas fa-times"></i>
                         </div>
@@ -173,45 +182,39 @@
                         <!-- Slideshow container -->
                         <div class="slideshow-container">
                             <!-- Change all myslides +1 -->
-                            <div class="mySlides1">
-                                <div class="numbertext">1 / 5</div>
-                                <img src="images/niSlide1.gif" alt="niSlide1"></img>
-                                <div class="caption">Login/Register</div>
+                            <div class="mySlides3">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="images/em/emSlide1.gif" alt="emSlide1"></img>
+                                <div class="caption">Move vertices, edges, and faces by simply reaching out and grabbing them</div>
                             </div>
                             <!-- Change all myslides +1 -->
-                            <div class="mySlides1">
-                                <div class="numbertext">2 / 5</div>
-                                </a><img src="images/niSlide2.jpg" alt="niSlide2"></img>
-                                <div class="caption">Home Page with daily and weekly breakdowns</div>
+                            <div class="mySlides3">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="images/em/emSlide2.gif" alt="emSlide2"></img>
+                                <div class="caption">Hop into a multiplayer lobby to collaborate on your edits using in-game voice chat</div>
                             </div>
                             <!-- Change all myslides +1 -->
-                            <div class="mySlides1">
-                                <div class="numbertext">3 / 5</div>
-                                <img src="images/niSlide3.jpg" alt="niSlide3"></img>
-                                <div class="caption">Adding meals manually or through search</div>
-                            </div>
-                            <!-- Change all myslides +1 -->
-                            <div class="mySlides1">
-                                <div class="numbertext">4 / 5</div>
-                                <img src="images/niSlide4.jpg" alt="niSlide4"></img>
-                                <div class="caption">Data page to get a deeper look into your nutrional breakdown</div>
-                            </div>
-                            <div class="mySlides1">
-                                <div class="numbertext">5 / 5</div>
-                                <img src="images/niSlide5.jpg" alt="niSlide5"></img>
-                                <div class="caption">Mobile app for adding meals on the go</div>
+                            <div class="mySlides3">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="images/em/emSlide3.gif" alt="emSlide3"></img>
+                                <div class="caption">Easily transfer 3D model files between VR and your PC using our webserver</div>
                             </div>
                             <!-- Next and previous buttons -->
                             <!-- Change slideshow +1 -->
-                            <a class="prev" onclick="plusSlides(currSlideCount=-1, Slideshow=0)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(currSlideCount=1, Slideshow=0)">&#10095;</a>
+                            <a class="prev" onclick="plusSlides(currSlideCount=-1, Slideshow=2)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(currSlideCount=1, Slideshow=2)">&#10095;</a>
                         </div>
                         <div class="desc">
-                            <p>Nutrition Intuition is a full-stack web development project that helps users track the nutritional value of the food they eat. The project was completed over 10 weeks through collaboration with 5 other students. We had a lot of freedom in deciding how to set up our server and ultimately decided to develop Nutrition Intuition on the MERN stack due to its ease of use and reliability.</p>
-                                <br><p>As the project manager, I adhered to Agile development principles. Requirements were gathered early and thoroughly, we met frequently with all stakeholders, and avoided any periods of crunch. This project challenged me in scale and complexity but it also made me much more comfortable with front-end development and database management. In the end, we had a fully functional platform with both a web and mobile interface.</p>
+                            <p>EasyMeshVR is an open-source VR program built in Unity to target the Steam and Meta platforms. From ideation to execution, this project was completed 
+                                entirely by me and my team over 6 months. This virtual environment takes advantage of the best features of VR to make editing 3D models easy such as the 
+                                use of intuitive hand gestures to quickly move, rotate, and scale the model. Other key features include collaborative editing in real-time using multiplayer 
+                                lobbies and quickly transferring 3D model files using our web server.</p>
+                                <br><p>The freedom of the VR platform combined with the ability to define our requirements makes this the ideal project for a creative problem solver like 
+                                    myself. Due to my previous experience working on Nutrition Intuition, I was voted by my group to be the project manager. My main goals as project manager 
+                                    were to set the requirements for EasyMeshVR and track each task needed to build the final product.
+                                </p>
                             <div class="external-links">
-                                <a href="http://nutrition-intuition.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/ThechasEE/NutritionIntuition" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/EasyMeshVR/EasyMeshVR" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -223,10 +226,10 @@
                             <p>Completed:</p>
                         </div>
                         <div class="langB">
-                            <p>Javascript, HTML, CSS</p>
+                            <p>C#, Unity, NodeJS, AWS</p>
                         </div>
                         <div class="dateB">
-                            <p>Feb 2021 - Apr 2021</p>
+                            <p>Aug 2021 - Apr 2022</p>
                         </div>
                     </div>
                 </div>
@@ -244,25 +247,25 @@
                             <!-- Change all myslides +1 -->
                             <div class="mySlides2">
                                 <div class="numbertext">1 / 4</div>
-                                    <img src="images/erSlide1.gif" alt="erSlide1"></img>
+                                <img src="images/er/erSlide1.gif" alt="erSlide1"></img>
                                 <div class="caption">DNA/flight path is completely random for the first generation</div>
                             </div>
                             <!-- Change all myslides +1 -->
                             <div class="mySlides2">
                                 <div class="numbertext">2 / 4</div>
-                                <img src="images/erSlide2.gif" alt="erSlide2"></img>
+                                <img src="images/er/erSlide2.gif" alt="erSlide2"></img>
                                 <div class="caption">Over many generations the rockets propagate their DNA and refine the path to the target</div>
                             </div>
                             <!-- Change all myslides +1 -->
                             <div class="mySlides2">
                                 <div class="numbertext">3 / 4</div>
-                                <img src="images/erSlide3.gif" alt="erSlide3"></img>
-                                <div class="caption">Once the rockets have locked on to the target they optimize the path with small mutations</div>
+                                <img src="images/er/erSlide3.gif" alt="erSlide3"></img>
+                                <div class="caption">Once the rockets have locked on to the target, they optimize the path with small mutations</div>
                             </div>
                             <!-- Change all myslides +1 -->
                             <div class="mySlides2">
                                 <div class="numbertext">4 / 4</div>
-                                <img src="images/erSlide4.gif" alt="erSlide4"></img>
+                                <img src="images/er/erSlide4.gif" alt="erSlide4"></img>
                                 <div class="caption">The rockets will find a new path if we move the target from the last slide</div>
                             </div>
                             <!-- Next and previous buttons -->
@@ -271,8 +274,12 @@
                             <a class="next" onclick="plusSlides(currSlideCount=1, Slideshow=1)">&#10095;</a>
                         </div>
                         <div class="desc">
-                            <p>At the beginning of 2018, I became interested in game programming and started making small projects in Unity. My first exploration of machine learning, more specifically reinforcement learning, occurred during this time with Evolutionary Rockets. Evolutionary Rockets is a 2D simulation where 40 small rockets have to find their way to a target using limited knowledge of their environment. Over many generations, these rockets learn to avoid obstacles and refine their path to take as few frames as possible.</p>
-                            <span><br><p>If you want to play around with the demo I updated the UI and upload a webGL build on this website. You can click the controller icon below to access it.</p></span>
+                            <p>In the beginning of 2018, I became interested in game programming and started making small projects in Unity. My first exploration of 
+                                machine learning, more specifically reinforcement learning, occurred during this time with Evolutionary Rockets. Evolutionary Rockets is 
+                                a 2D simulation where 40 small rockets have to find their way to a target using limited knowledge of their environment. Over many generations, 
+                                these rockets learn to avoid obstacles and refine their path to take as few frames as possible.</p>
+                            <span><br><p>If you want to play around with the demo I updated the UI and upload a webGL build on this website. You can click the controller 
+                                icon below to access it.</p></span>
                             <div class="external-links">
                                 <a href="EvolutionaryRockets/index.html" target="_blank"><i class="fas fa-gamepad"></i></a>
                                 <a href="https://github.com/elegs99/EvolutionaryRockets" target="_blank"><i class="fab fa-github"></i></a>
@@ -295,13 +302,86 @@
                     </div>
                 </div>
             </div>
-            <!--add new popup info here and update javascript-->
+            <div class="project1">
+                <div class="popup-content">
+                    <div class="header">
+                        <h2>Nutrition Inuition</h2>
+                        <div class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
+                            <!-- Change all myslides +1 -->
+                            <div class="mySlides1">
+                                <div class="numbertext">1 / 5</div>
+                                <img src="images/ni/niSlide1.gif" alt="niSlide1"></img>
+                                <div class="caption">Login/Register</div>
+                            </div>
+                            <!-- Change all myslides +1 -->
+                            <div class="mySlides1">
+                                <div class="numbertext">2 / 5</div>
+                                <img src="images/ni/niSlide2.jpg" alt="niSlide2"></img>
+                                <div class="caption">Home Page with daily and weekly breakdowns</div>
+                            </div>
+                            <!-- Change all myslides +1 -->
+                            <div class="mySlides1">
+                                <div class="numbertext">3 / 5</div>
+                                <img src="images/ni/niSlide3.jpg" alt="niSlide3"></img>
+                                <div class="caption">Adding meals manually or through search</div>
+                            </div>
+                            <!-- Change all myslides +1 -->
+                            <div class="mySlides1">
+                                <div class="numbertext">4 / 5</div>
+                                <img src="images/ni/niSlide4.jpg" alt="niSlide4"></img>
+                                <div class="caption">Data page to get a deeper look into your nutrional breakdown</div>
+                            </div>
+                            <div class="mySlides1">
+                                <div class="numbertext">5 / 5</div>
+                                <img src="images/ni/niSlide5.jpg" alt="niSlide5"></img>
+                                <div class="caption">Mobile app for adding meals on the go</div>
+                            </div>
+                            <!-- Next and previous buttons -->
+                            <!-- Change slideshow +1 -->
+                            <a class="prev" onclick="plusSlides(currSlideCount=-1, Slideshow=0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(currSlideCount=1, Slideshow=0)">&#10095;</a>
+                        </div>
+                        <div class="desc">
+                            <p>Nutrition Intuition is a full-stack web development project that helps users track the nutritional value of the food they eat. The 
+                                project was completed over 10 weeks through collaboration with 5 other students. We had a lot of freedom in deciding how to set up 
+                                our web server and ultimately decided to develop Nutrition Intuition on the MERN stack due to its ease of use and reliability.
+                            </p>
+                                <br><p>As the project manager, I adhered to agile development principles. Requirements were gathered early and thoroughly, we met 
+                                    frequently with all stakeholders, and avoided any periods of crunch. This project challenged me in scale and complexity, but it 
+                                    also made me much more comfortable with front-end development and database management. In the end, we had a fully functional 
+                                    platform with a web and mobile interface.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="lang">
+                            <p>Languages:</p>
+                        </div>
+                        <div class="date">
+                            <p>Completed:</p>
+                        </div>
+                        <div class="langB">
+                            <p>Javascript, HTML, CSS</p>
+                        </div>
+                        <div class="dateB">
+                            <p>Feb 2021 - Apr 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
         </div>
     </div>
     <!--FOOTER-->
     <footer>
         <div class="copyright">
-            <span>Created By <a href="#about">Ethan Legum</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+            <span>Created By <a href="https://www.linkedin.com/in/ethan-l/" target="_blank">Ethan Legum</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
         </div>
         <div class="social-links">
             <a href="https://github.com/elegs99" target="_blank"><i class="fab fa-github"></i></a>
