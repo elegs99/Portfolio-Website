@@ -1,8 +1,7 @@
 # ethanlegum_website
-Personal website and portfolio. Started June 2021<br><br>
+Personal website and portfolio. Started June 2021<br>
 
-<a href="https://ethanlegum.com/" target="_blank">Ethan's Portfolio</a>
-
+<a href="https://ethanlegum.com/" target="_blank">Link to Website</a><br><br>
 
 Hosting: Bluehost<br>
 
