@@ -5,7 +5,7 @@ Personal website and portfolio. Started June 2021<br>
 
 Hosting: Bluehost<br>
 
-Helpful Links:<br>
+Reference Links:<br>
  * https://ezgif.com/
  * https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
  * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
