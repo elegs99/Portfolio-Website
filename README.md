@@ -1,7 +1,10 @@
 # ethanlegum_website
 Personal website and portfolio. Started June 2021<br><br>
+
+<a href="https://ethanlegum.com/" target="_blank">Ethan's Portfolio</a>
+
+
 Hosting: Bluehost<br>
- * renewal date: June 2, 2023
 
 Helpful Links:<br>
  * https://ezgif.com/
