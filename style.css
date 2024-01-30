@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+:root {
+    --blueHL: #2EBAEB;
+    --white: #ffffff;
+    --background: #1F202B;
+    --grey: #d3d3d3;
+    --navMenuButtonBorder: #2eb9eb54;
+    --expirenceCardBackground: #242633;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +35,7 @@ html {
 }
 .navbar.sticky {
     padding: 30px 0;
-    background: #2EBAEB;
+    background: var(--blueHL);
     top: -15px;
     height: 85px;
     transition: all 0.3s ease;
@@ -43,7 +51,7 @@ html {
     font-weight: 600;
 }
 .navbar .logo a span {
-    color: #2EBAEB;
+    color: var(--blueHL);
 }
 .navbar.sticky .logo a span {
     color: white;
@@ -62,7 +70,7 @@ html {
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-    color: #2EBAEB;
+    color: var(--blueHL);
 }
 .navbar.sticky .menu li a:hover {
     color: white;
@@ -78,7 +86,7 @@ html {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #2EBAEB;
+    background: var(--blueHL);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -103,7 +111,7 @@ html {
 /*HOME*/
 .home {
     display: flex;
-    background: #1F202B; /*placeholder for banner image*/
+    background: var(--background); /*placeholder for banner image*/
     height: 100vh;
     color: white;
     min-height: 500px;
@@ -126,13 +134,13 @@ html {
     margin: 5px 0;
 }
 .home .home-content .text-3 span {
-    color: #2EBAEB;
+    color: var(--blueHL);
     font-weight: 600;
 }
 .home .home-content a {
     display: inline-block;
-    background: #2EBAEB;
-    border: 2px solid #2EBAEB;
+    background: var(--blueHL);
+    border: 2px solid var(--blueHL);
     color: white;
     font-size: 25px;
     padding: 12px 30px;
@@ -142,7 +150,7 @@ html {
 }
 .home .home-content i {
     vertical-align: middle;
-    background: #2EBAEB;
+    background: var(--blueHL);
     color: white;
     font-size: 23px;
     margin-left: 10px;
@@ -153,18 +161,18 @@ html {
     font-size: 20px;
 }
 .home .home-content a:hover i.fas.fa-angle-double-right{
-    color: #2EBAEB;
-    background: #1F202B;
+    color: var(--blueHL);
+    background: var(--background);
     margin-left: 25px;
     transition: margin-left ease-out 0.2s;
 }
 .home .home-content a:hover{
-    color: #2EBAEB;
-    background: #1F202B;
+    color: var(--blueHL);
+    background: var(--background);
 }
 .home .home-content a:hover i.fas.fa-external-link-alt{
-    color: #2EBAEB;
-    background: #1F202B;
+    color: var(--blueHL);
+    background: var(--background);
 }
 .about .about-content .column{
     width: 50%;
@@ -212,7 +220,7 @@ section .title::after {
     bottom: -12px;
     left: 50%;
     font-size: 21px;
-    color: #2EBAEB;
+    color: var(--blueHL);
     padding: 5px;
     background-color: white;
     transform: translateX(-50%);
@@ -226,31 +234,31 @@ section .title::after {
     content: "who I am";
 }
 .about .about-content .left {
-    width: 45%;
+    width: 35%;
 }
 .about .about-content .left img {
-    height: 550px;
-    width: 500px;
+    height: 500px;
+    width: 450px;
     object-fit: cover;
     border-radius: 10px;
 }
 .about .about-content .right {
-    width: 55%;
+    width: 60%;
 }
 .about .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .about .about-content .right .text span {
-    color: #2EBAEB;
+    color: var(--blueHL);
 }
 .about .about-content .right p {
     text-align: justify;
 }
 .about .about-content .right a {
     display: inline-block;
-    background: #2EBAEB;
+    background: var(--blueHL);
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -258,24 +266,24 @@ section .title::after {
     margin-right: 20px;
     margin-top: 20px;
     border-radius: 8px;
-    border: 2px solid #2EBAEB;
+    border: 2px solid var(--blueHL);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-    color: #2EBAEB;
+    color: var(--blueHL);
     background: white;
 }
 
 /*SKILLS & EXPIRENCE*/
 .experience {
     color: white;
-    background: #1F202B;
+    background: var(--background);
 }
 .experience .title::before {
     background: white;
 }
 .experience .title::after {
-    background: #1F202B;
+    background: var(--background);
     content: "what I provide";
 }
 .experience .serv-content {
@@ -294,7 +302,7 @@ section .title::after {
 }
 .experience .serv-content .left .card {
     max-width: 26em;
-    background: #242633;
+    background: var(--expirenceCardBackground);
     text-align: left;
     border-radius: 8px;
     padding: 15px 20px;
@@ -305,8 +313,8 @@ section .title::after {
     transition: all 0.3s ease;
 }
 .experience .serv-content .card i{
-    font-size: 50px;
-    color: #2EBAEB;
+    font-size: 45px;
+    color: var(--blueHL);
 }
 .experience .serv-content .card p{
     font-size: 15px;
@@ -325,13 +333,15 @@ section .title::after {
     flex-direction: row;
     justify-content: space-between;
     font-weight: 500;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .experience .serv-content .timeline p {
     margin-left: 20px;
+    margin-right: -20px;
 }
 .experience .serv-content .right .bars {
     margin-bottom: 15px;
+    margin-right: -20px;
 }
 .experience .serv-content .right .info {
     display: flex;
@@ -354,11 +364,11 @@ section .title::after {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #2EBAEB;
+    background-color: var(--blueHL);
 }
 .experience .serv-content .right .java::before {
     /*late 2018*/
-    width: 95%;
+    width: 80%;
 }
 .experience .serv-content .right .python::before {
     /*early 2019*/
@@ -366,19 +376,19 @@ section .title::after {
 }
 .experience .serv-content .right .csharp::before {
     /*mid 2018*/
-    width: 100%;
+    width: 90%;
 }
 .experience .serv-content .right .html::before, .css::before {
     /*late 2019 early 2020*/
-    width: 75%;
+    width: 70%;
 }
 .experience .serv-content .right .mysql::before {
     /*early 2020*/
-    width: 70%;
+    width: 65%;
 }
 .experience .serv-content .right .js::before {
     /*mid 2020*/
-    width: 60%;
+    width: 50%;
 }
 
 /*PROJECTS*/
@@ -401,39 +411,39 @@ section .title::after {
     object-fit: cover;
 }
 .grid-item1 {
-    border: 1px solid #1F202B;
+    border: 1px solid var(--background);
     transition: ease-in-out 0.3s all;
 }
 .grid-item2 {
-    border: 1px solid #1F202B;
+    border: 1px solid var(--background);
     transition: ease-in-out 0.3s all;
 }
 .grid-item3 {
-    border: 1px solid #1F202B;
+    border: 1px solid var(--background);
     transition: ease-in-out 0.3s all;
 }
 /*
 .grid-item4 {
-    border: 1px solid #1F202B;
+    border: 1px solid var(--background);
     transition: ease-in-out 0.3s all;
 }
 */
 .grid-item1:hover {
-    border: 2px solid #2EBAEB;
+    border: 2px solid var(--blueHL);
     background: gray;
     transform: scale(1.1);
     transition: ease-in-out 0.3s all;
     cursor: pointer;
 }
 .grid-item2:hover {
-    border: 2px solid #2EBAEB;
+    border: 2px solid var(--blueHL);
     background: gray;
     transform: scale(1.1);
     transition: ease-in-out 0.3s all;
     cursor: pointer;
 }
 .grid-item3:hover {
-    border: 2px solid #2EBAEB;
+    border: 2px solid var(--blueHL);
     background: gray;
     transform: scale(1.1);
     transition: ease-in-out 0.3s all;
@@ -441,7 +451,7 @@ section .title::after {
 }
 /*
 .grid-item4:hover {
-    border: 2px solid #2EBAEB;
+    border: 2px solid var(--blueHL);
     background: gray;
     transform: scale(1.1);
     transition: ease-in-out 0.3s all;
@@ -449,7 +459,7 @@ section .title::after {
 }
 */
 .grid-itemcomingsoon {
-    border: 1px solid #1F202B;
+    border: 1px solid var(--background);
     transition: ease-in-out 0.3s all;
 }
 
@@ -473,7 +483,7 @@ section .title::after {
 }
 .popup-content {
     z-index: 11;
-    background: #1F202B;
+    background: var(--background);
     position: relative;
     display: flexbox;
     flex-direction: column;
@@ -490,14 +500,14 @@ section .title::after {
 }
 .header h2 {
     font-size: 28px;
-    color: #2EBAEB;
+    color: var(--blueHL);
 }
 .close-btn {
     font-size: 22px;
     color: white;
 }
 .close-btn:hover {
-    color: #2EBAEB;
+    color: var(--blueHL);
     cursor: pointer;
 }
 .content {
@@ -523,7 +533,7 @@ section .title::after {
     color: white;
 }
 .external-links i:hover {
-    color: #2EBAEB;
+    color: var(--blueHL);
     transition: all 0.3s ease;
 }
 .project-details {
@@ -624,7 +634,7 @@ footer {
     padding: 1em 5em;
 }
 footer span a {
-    color: #2EBAEB;
+    color: var(--blueHL);
     text-decoration: none;
 }
 footer span a:hover {
@@ -639,7 +649,7 @@ footer .social-links i {
     margin-right: 30px;
 }
 footer .social-links i:hover {
-    color: #2EBAEB;
+    color: var(--blueHL);
 }
 
 /*MEDIA QUERY*/
@@ -663,20 +673,23 @@ footer .social-links i:hover {
         font-size: 14px;
     }
 }
-@media (max-width: 86rem) {
+@media (max-width: 89rem) {
+    .about .about-content .left img {
+        height: 450px;
+        width: 400px;
+    }
+}
+@media (max-width: 85rem) {
     .popup-content {
         margin-right: 4%;
         margin-left: 4%;
     }
     .about .about-content .left img {
         height: 400px;
-        width: 400px;
+        width: 350px;
     }
 }
 @media (max-width: 78.125rem) {
-    .popup-content {
-        margin-top: calc(50vh + -270px);
-    }
     .slideshow-container img {
         width: 35em;
         height: 20em;
@@ -696,10 +709,7 @@ footer .social-links i:hover {
     }
     .about .about-content .left img {
         height: 350px;
-        width: 350px;
-    }
-    .popup-content {
-        margin-top: calc(45vh + -275px);
+        width: 300px;
     }
 }
 @media (max-width: 62.5rem) {
@@ -715,9 +725,6 @@ footer .social-links i:hover {
     }
     .experience .serv-content .left .card {
         text-align: center;
-    }
-    .popup-content {
-        margin-top: calc(40vh + -260px);
     }
     .slideshow-container img {
         width: 35em;
@@ -771,9 +778,9 @@ footer .social-links i:hover {
     }
     .navbar .menu li{
         display: block;
-        background: #1F202B;
+        background: var(--background);
         margin: 5px;
-        border: 2px solid #2eb9eb54;
+        border: 2px solid var(--navMenuButtonBorder);
         border-radius: 8px;
     }
     .navbar .menu li a{
@@ -801,6 +808,10 @@ footer .social-links i:hover {
     .about .about-content .right {
         flex: 100%;
     }
+    .about .about-content .left img {
+        height: 400px;
+        width: 350px;
+    }
     .services .serv-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -812,9 +823,6 @@ footer .social-links i:hover {
     .grid-wrapper {
         grid-template-columns: repeat(auto-fit, minmax(250px, auto));
         grid-auto-rows: minmax(auto, 200px);
-    }
-    .popup-content {
-        margin-top: calc(35vh + -215px);
     }
     .content {
         flex-direction: column;
@@ -838,8 +846,9 @@ footer .social-links i:hover {
     }
 }
 @media (max-width: 46.875rem) {
-    .popup-content {
-        margin-top: calc(33vh + -215px);
+    .about .about-content .left img {
+        height: 350px;
+        width: 300px;
     }
 }
 @media (max-width: 43.125rem) {
@@ -873,9 +882,9 @@ footer .social-links i:hover {
     }
 }
 @media (max-width: 39.375rem) {
-    .popup-content {
-        margin-top: calc(33vh + -215px);
-        margin: 5px 3%;
+    .home .home-content a:hover i.fas.fa-angle-double-right{
+        margin-left: 10px;
+        transition: margin-left ease-out 0.2s;
     }
     .slideshow-container img {
         width: 21em;
@@ -907,13 +916,16 @@ footer .social-links i:hover {
     .dateB {
         font-size: 10px;
     }
+    .projects .title::after {
+        font-size: 20px;
+    }
 }
 @media (max-width: 31.25rem) {
     .scroll-up-btn.show {
         bottom: 100px;
     }
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 45px;
     }
     .home .home-content .text-3{
         font-size: 27px;
@@ -923,9 +935,6 @@ footer .social-links i:hover {
     }
     .navbar .menu li a{
         font-size: 15px;
-    }
-    .popup-content {
-        margin-top: 5em;
     }
     .project-details, .external-links {
         display: none;
