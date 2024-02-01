@@ -44,7 +44,12 @@ $(document).ready(function(){
     });
 
     // Popup closer for close button and overlay click outside popup content
-    $('.close-btn, .overlay').click(function(event){
+    $('.close-btn').click(function(event){
+        $('.overlay, .project1, .project2, .project3, .popup-content').hide();
+        $('.scroll-up-btn').addClass("show");
+        $('body').css('overflow', 'auto');
+    });
+    $('.overlay').click(function(event){
         if ($(event.target).closest('.popup-content').length === 0) {
             $('.overlay, .project1, .project2, .project3, .popup-content').hide();
             $('.scroll-up-btn').addClass("show");
