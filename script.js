@@ -1,115 +1,88 @@
 $(document).ready(function(){
-    // check scroll position
-    // hide popup
-    $('.popup-content').hide();
-    $('.project1').hide();
-    $('.project2').hide();
-    $('.project3').hide();
-    // add header background when scrolling
-    // add scroll up botton when scrolling
+    // Initialize popups and related elements as hidden
+    $('.popup-content, .project1, .project2, .project3').hide();
+
+    // Header background and scroll up button behavior on scroll
     $(window).scroll(function(){
+        // Sticky navbar activation
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");
         }
-        if(this.scrollY > 500 && !($('.overlay').hasClass("show"))){
+
+        // Scroll-up button visibility
+        if(this.scrollY > 500 && !$('.overlay').hasClass("show")){
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
 
-    // Toggle menu button
+    // Toggle menu/navbar button
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
-    // Typing animation
-    var typed = new Typed(".typing", {
-        strings: ["a Student.", "a Programmer.", " your Next Hire.",],
+    // Typing animation setup
+    new Typed(".typing", {
+        strings: ["a Student.", "a Programmer.", "your Next Hire."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    // Opens and closes popup
-    $('.grid-item1').click(function(){
-        $('.overlay').show()
-        $('.project1').show()
-        $('.popup-content').show()
+    // Modify the popup openers to include image loading
+    $('.grid-item1, .grid-item2, .grid-item3').click(function(){
+        var projectClass = '.project' + this.className.slice(-1);
+        var projectPopup = $(projectClass);
+        $('.overlay, ' + projectClass + ', .popup-content').show();
+        loadPopupImages(projectPopup); // Load images when the popup is opened
         $('.scroll-up-btn').removeClass("show");
-        $('body').css('overflow','hidden')
+        $('body').css('overflow', 'hidden');
     });
-    $('.grid-item2').click(function(){
-        $('.overlay').show()
-        $('.project2').show()
-        $('.popup-content').show()
-        $('.scroll-up-btn').removeClass("show");
-        $('body').css('overflow','hidden')
-    });
-    $('.grid-item3').click(function(){
-        $('.overlay').show()
-        $('.project3').show()
-        $('.popup-content').show()
-        $('.scroll-up-btn').removeClass("show");
-        $('body').css('overflow','hidden')
-    });
-    // add new popup here
 
-    // close popup
-    $('.close-btn').click(function(){
-        $('.overlay').hide();
-        $('.project1').hide();
-        $('.project2').hide();
-        $('.project3').hide();
-        // add new project hide
-        $('.popup-content').hide();
-        $('.scroll-up-btn').addClass("show");
-        $('body').css('overflow','auto')
-    });
-    $('.overlay').click(function(event){
-        var $target = $(event.target);
-        if(!$target.closest('.popup-content').length){
-            $('.overlay').hide();
-            $('.project1').hide();
-            $('.project2').hide();
-            $('.project3').hide();
-            // add new project hide
-            $('.popup-content').hide();
+    // Popup closer for close button and overlay click outside popup content
+    $('.close-btn, .overlay').click(function(event){
+        if ($(event.target).closest('.popup-content').length === 0) {
+            $('.overlay, .project1, .project2, .project3, .popup-content').hide();
             $('.scroll-up-btn').addClass("show");
-            $('body').css('overflow','auto')
+            $('body').css('overflow', 'auto');
         }
     });
-
 });
 
-// Code for slideshow modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
-// increment second index by 1
-var slideIndex = [1,2];
+// Slideshow functionality
+var slideIndex = [1, 2];  // Index for each slideshow
+var slideId = ["NiSlides", "ErSlides", "EmSlides"];  // IDs for each slideshow
 
-// Add mySlides4
-var slideId = ["mySlides1", "mySlides2", "mySlides3"]
-
-// 7 > highest num of slides, 3 num of slideshows
-// add showSlides(7, 3)
+// Initialize slideshows
 showSlides(7, 2);
 showSlides(7, 1);
 showSlides(7, 0);
 
-// Next/previous controls
+// Functions to control next/previous slides
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
-// show correct image
+
+// Function to display the correct slide
 function showSlides(n, no) {
-  var i;
   var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
+  if (n > x.length) { slideIndex[no] = 1; }
+  if (n < 1) { slideIndex[no] = x.length; }
+  for (var i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
   x[slideIndex[no]-1].style.display = "block";
+}
+
+// Function to load images in the popup
+function loadPopupImages(popupElement) {
+    var lazyImages = $(popupElement).find('img[data-src][loading="lazy"]');
+    lazyImages.each(function() {
+        $(this).attr('src', $(this).data('src')); // Set the source of the image
+        $(this).removeAttr('loading'); // Remove the 'loading' attribute
+    });
 }
