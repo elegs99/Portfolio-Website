@@ -3,8 +3,6 @@ Personal website and portfolio. Started June 2021<br>
 
 <a href="https://ethanlegum.com/" target="_blank">Link to Website</a><br><br>
 
-Hosting: Bluehost<br>
-
 Reference Links:<br>
  * https://ezgif.com/
  * https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free
